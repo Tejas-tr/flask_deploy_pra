@@ -41,3 +41,6 @@ CMD ["python", "-m", "flask", "--app", "hello.py", "run", "--host=0.0.0.0", "--p
 #1 . create repository in dockerhub using below code - docker tag <created image name? <dockerehub username/<give rep name> : latest
 #2. push create repository from local to online --> docker push <dockerehub username/<give rep name> : latest
 
+
+# to delete image in docker -->  docker image rm <image name> 
+# to delete image in docker with force delete -->  docker image rm <image name> -f
