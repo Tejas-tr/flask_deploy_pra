@@ -17,7 +17,7 @@ def test_b_functionality():
     a = 20
     b = 2
     assert sub_num(a,b) == 18, 'value failed'
-    assert multi_num(a,b) == 41, 'value failed'
+    assert multi_num(a,b) == 40, 'value failed'
     # here 'value failed' statment will shown in result if above statement is failed
 # run 'pytest .' in terminal to get whether these functions are passed for failed
 

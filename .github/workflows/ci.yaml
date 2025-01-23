@@ -1,0 +1,15 @@
+# in order to create CI - automated testing. These folder structure to be folloewed
+'''
+.github --> workflows --> <name>.yaml
+coding will be done in this yaml file
+'''
+# here in this file , coding are done in workflow basis
+name : first CI test
+on:
+  push:
+    branches:
+      - main
+
+jobs : 
+  job1 : 
+    run-on: ubuntu-latest
