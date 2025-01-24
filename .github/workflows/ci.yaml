@@ -13,3 +13,19 @@ on:
 jobs : 
   job1 : 
     run-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: | # this symbol is ued to run below lines sequenclly
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name : Run test
+        run : |
+          pytest
