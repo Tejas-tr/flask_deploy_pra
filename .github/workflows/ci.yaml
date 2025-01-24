@@ -8,13 +8,14 @@ name : first CI test
 on:
   push:
     branches:
-      - CI_pipeline
+      - CI_pipeline # this workflow will be triggered when i try to push to CI_pipeline bramch
+      - Main # this workflow will be triggered when i try to push to Main bramch
 
 jobs : 
   job1 : 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code # "checkout" refers to retrieving the latest code from repository and making it available in your workflow environment.
         uses: actions/checkout@v4
 
       - name: Install Python
@@ -23,7 +24,7 @@ jobs :
           python-version: '3.9'
 
       - name: Install dependencies
-        run: | # this symbol is ued to run below lines sequenclly
+        run: | # this symbol is used to run below lines sequenclly
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name : Run test
