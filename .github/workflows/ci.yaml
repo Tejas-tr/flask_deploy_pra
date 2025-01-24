@@ -1,6 +1,10 @@
 # in order to create CI - automated testing. These folder structure to be folloewed
 #.github --> workflows --> <name>.yaml
 #coding will be done in this yaml file
+<<<<<<< HEAD
+=======
+
+>>>>>>> 425b93a008dbdc63794f4a0fee49ec46cb80cd3e
 # here in this file , coding are done in workflow basis
 
 
